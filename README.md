@@ -1,0 +1,1 @@
+# JapanGo-page

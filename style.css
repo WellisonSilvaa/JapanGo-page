@@ -3,20 +3,21 @@
    src: url(/fonts/go3v2.ttf);
 }
 
+
 body {
     display: flex;
     flex-direction: column;
     font-family: JapanGo;
-    flex-direction: column;
-    /* background-color: brown; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
 }
 
 
+/*------------- CSS DESKTOP -------------*/
 
-.cards-desktop {
+
+.cards {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -24,19 +25,6 @@ body {
     height: 310px;
     /* background-color: aqua; */
 }
-
-.cards-mobile{
-    display: none;
-}
-
-@media(max-width: 700px) {
-    .cards-desktop {
-        display: none;
-    }
-    .cards-mobile {
-    display: contents;
-    }
-  }
 
 .card-perfil {
     width: 30%;
@@ -52,25 +40,27 @@ body {
     display: flex;
     margin: 15px auto;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     /* border-radius: 50%; */
     background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, darkblue, darkorchid) border-box;
+              linear-gradient(to right, rgb(253, 2, 2), rgb(0, 0, 0)) border-box;
     border-radius: 50em;
     border: 5px solid transparent;
 }
 
 .card-link {
     display: flex;
-    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
     width: 50%;
     margin: auto;
 }
 
 .logo-git {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .name-perfil {
@@ -116,4 +106,76 @@ body {
 .font-link {
     font-size: 1.4em;
 }
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+
+/*----------- CSS MOBILE------------------- */
+@media(max-width: 700px) {
+    .cards {
+        display: block;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        background-color: aqua;
+    }
+    
+    .card-perfil {
+        width: 90%;
+        height: 250px;
+        flex-direction: row;
+        border: 1px solid #000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-perfil {
+        display: flex;
+        margin: 15px auto;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+        /* border-radius: 50%; */
+        background: linear-gradient(white, white) padding-box,
+                  linear-gradient(to right, rgb(253, 2, 2), rgb(0, 0, 0)) border-box;
+        border-radius: 50em;
+        border: 5px solid transparent;
+    }
+    
+    .card-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .logo-git {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .name-perfil {
+        margin-left: 10px;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100px;
+        background-color: blueviolet;
+    }
+
+   
+  }
 

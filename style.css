@@ -1,0 +1,119 @@
+@font-face {
+   font-family: JapanGo;
+   src: url(/fonts/go3v2.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: JapanGo;
+    flex-direction: column;
+    /* background-color: brown; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.cards-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    height: 310px;
+    /* background-color: aqua; */
+}
+
+.cards-mobile{
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .cards-desktop {
+        display: none;
+    }
+    .cards-mobile {
+    display: contents;
+    }
+  }
+
+.card-perfil {
+    width: 30%;
+    height: 300px;
+    flex: auto;
+    flex-direction: row;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-perfil {
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 5px solid transparent;
+}
+
+.card-link {
+    display: flex;
+    /* background-color: aqua; */
+    width: 50%;
+    margin: auto;
+}
+
+.logo-git {
+    width: 50px;
+    height: 50px;
+}
+
+.name-perfil {
+    margin-left: 10px;
+}
+
+.container-font p {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: aqua;
+    font-size: 70pt;
+    color: line;
+}
+
+.gradient {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to right, rgb(255, 2, 2), rgb(138, 91, 91), rgb(2, 2, 2));
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  
+}
+
+.container-link {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 150px;
+    background-color: aqua;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, rgb(252, 23, 7), rgb(0, 0, 0)) border-box;
+    border-radius: 3em;
+    border: 5px solid transparent;
+}
+
+.font-link {
+    font-size: 1.4em;
+}
+
